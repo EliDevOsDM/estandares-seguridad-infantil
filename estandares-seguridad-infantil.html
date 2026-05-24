@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Estándares de seguridad infantil de AppIglesia (MyParr), aplicación parroquial católica. Política contra abuso y explotación sexual infantil (CSAE)." />
+  <title>Estándares de seguridad infantil — AppIglesia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: { DEFAULT: '#f8f4ec', dark: '#f3efe6' },
+            navy: { DEFAULT: '#1e3a5f', light: '#2a4a6f', dark: '#152a45' },
+            gold: { DEFAULT: '#c9a24b', light: '#f5e8c6', dark: '#a8843a' },
+            sand: '#eae3d5',
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            card: '0 4px 24px -4px rgba(30, 58, 95, 0.08), 0 2px 8px -2px rgba(30, 58, 95, 0.04)',
+            glow: '0 0 60px -12px rgba(201, 162, 75, 0.35)',
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-balance { text-wrap: balance; }
+    }
+    .hero-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .prose-section h2 { scroll-margin-top: 6rem; }
+  </style>
+</head>
+<body class="font-sans text-stone-800 bg-cream antialiased">
+
+  <!-- Hero -->
+  <header class="relative overflow-hidden bg-gradient-to-br from-navy via-navy-light to-navy-dark text-white hero-pattern">
+    <div class="absolute inset-0 bg-gradient-to-t from-navy-dark/40 to-transparent pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" aria-hidden="true"></div>
+    <div class="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/4" aria-hidden="true"></div>
+
+    <div class="relative max-w-5xl mx-auto px-5 sm:px-8 pt-14 pb-16 sm:pt-20 sm:pb-24 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-sand text-stone-900 text-sm font-medium mb-6 shadow-sm">
+        <svg class="w-4 h-4 text-stone-900" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        </svg>
+        Seguridad infantil
+      </div>
+      <h1 class="font-display text-5xl sm:text-6xl font-bold tracking-tight text-white mb-3">
+        App<span class="text-gold">Iglesia</span>
+      </h1>
+      <p class="text-xl sm:text-2xl text-white/90 font-display font-medium italic">
+        Estándares de seguridad infantil
+      </p>
+      <p class="mt-3 text-sm text-white/60">
+        También disponible en Google Play como <strong class="text-white/80 font-medium">MyParr</strong>
+      </p>
+      <p class="mt-6 inline-flex items-center gap-2 text-sm text-white/70">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+        Última actualización: 19 de mayo de 2026
+      </p>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <div class="lg:grid lg:grid-cols-[240px_1fr] lg:gap-10 xl:gap-14">
+
+      <!-- Sidebar TOC -->
+      <aside class="hidden lg:block">
+        <nav class="sticky top-8 rounded-2xl bg-white border border-sand p-5 shadow-card" aria-label="Índice">
+          <p class="text-xs font-semibold uppercase tracking-wider text-navy/60 mb-4">Contenido</p>
+          <ol class="space-y-1.5 text-sm">
+            <li><a href="#s1" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">1. Compromiso</a></li>
+            <li><a href="#s2" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">2. Público y edad</a></li>
+            <li><a href="#s3" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">3. Tolerancia cero</a></li>
+            <li><a href="#s4" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">4. Conductas prohibidas</a></li>
+            <li><a href="#s5" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">5. Cómo reportar</a></li>
+            <li><a href="#s6" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">6. Revisión y respuesta</a></li>
+            <li><a href="#s7" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">7. Medidas</a></li>
+            <li><a href="#s8" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">8. Autoridades</a></li>
+            <li><a href="#s9" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">9. Actualizaciones</a></li>
+            <li><a href="#s10" class="block py-1.5 px-2 rounded-lg text-stone-600 hover:bg-cream hover:text-navy transition-colors">10. Contacto</a></li>
+          </ol>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <main class="min-w-0">
+        <!-- Lead card -->
+        <article class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-navy via-gold to-navy" aria-hidden="true"></div>
+          <p class="text-lg sm:text-xl text-stone-600 leading-relaxed text-balance">
+            <strong class="text-navy font-semibold">AppIglesia</strong> (publicada en Google Play como <strong class="text-navy font-semibold">MyParr</strong>) es una aplicación de comunidad parroquial católica operada por <strong class="text-navy font-semibold">EliDevosDM</strong>. Este documento establece nuestros estándares publicados contra el <strong class="text-navy font-semibold">abuso y la explotación sexual infantil (CSAE)</strong>, incluido el material de abuso sexual infantil (CSAM), conforme a las políticas de Google Play y a la legislación aplicable.
+          </p>
+        </article>
+
+        <article class="prose-section space-y-6">
+
+          <section id="s1" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center shadow-glow">1</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Nuestro compromiso</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 leading-relaxed pl-0 sm:pl-14">
+              <p>La seguridad de los usuarios, especialmente de los menores de edad, es una prioridad para nosotros. AppIglesia no está diseñada para niños pequeños ni promueve interacciones inapropiadas con menores.</p>
+              <p>Mantenemos una política de <strong class="text-navy font-medium">tolerancia cero</strong> frente a cualquier contenido, conducta o intento de contacto que implique abuso, explotación, grooming, sexualización o daño a menores de edad.</p>
+              <p>Estos estándares complementan nuestros <a href="terminos-y-condiciones.html" class="text-navy font-medium underline decoration-gold decoration-2 underline-offset-2 hover:text-gold-dark transition-colors">Términos y condiciones</a> y nuestra Política de privacidad.</p>
+            </div>
+          </section>
+
+          <section id="s2" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">2</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Público objetivo y edad mínima</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 leading-relaxed pl-0 sm:pl-14">
+              <p>La App está dirigida a feligreses y comunidades parroquiales. Para registrarse, el usuario debe tener al menos <strong class="text-navy font-medium">13 años de edad</strong> (o la edad mínima exigida en su país).</p>
+              <p>Si el usuario es menor de edad según la legislación local, debe contar con el consentimiento de su padre, madre o tutor legal.</p>
+              <p class="text-sm bg-cream rounded-xl p-4 border border-sand">No recopilamos intencionalmente datos de niños menores de 13 años. Si detectamos una cuenta creada por un menor sin autorización, la eliminaremos o restringiremos conforme a la ley.</p>
+            </div>
+          </section>
+
+          <section id="s3" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">3</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Política de tolerancia cero (CSAE / CSAM)</h2>
+            </div>
+            <div class="pl-0 sm:pl-14">
+              <div class="flex gap-4 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-gold-light/80 to-cream border border-gold/30 mb-4">
+                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-gold-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                </div>
+                <p class="text-stone-700 leading-relaxed">
+                  Queda <strong class="text-navy">estrictamente prohibido</strong> crear, compartir, solicitar, almacenar, enlazar o facilitar cualquier contenido que represente, promueva o normalice el abuso o la explotación sexual de menores, incluido CSAM, grooming, sextorsión o contacto sexual con menores.
+                </p>
+              </div>
+              <p class="text-stone-600 leading-relaxed">Las cuentas y el contenido que infrinjan esta política serán eliminados de forma inmediata y permanente, sin previo aviso cuando la gravedad lo exija.</p>
+            </div>
+          </section>
+
+          <section id="s4" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">4</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Conductas prohibidas</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 leading-relaxed pl-0 sm:pl-14">
+              <p>Además de lo indicado en nuestros términos de uso, queda prohibido utilizar AppIglesia para:</p>
+              <ul class="space-y-2 text-sm">
+                <li class="flex gap-2 text-stone-600"><span class="text-red-400 font-bold">×</span>Contactar a menores con fines románticos, sexuales o de manipulación (grooming).</li>
+                <li class="flex gap-2 text-stone-600"><span class="text-red-400 font-bold">×</span>Solicitar, enviar o difundir imágenes, videos o mensajes de naturaleza sexual que involucren a menores.</li>
+                <li class="flex gap-2 text-stone-600"><span class="text-red-400 font-bold">×</span>Compartir enlaces, archivos o referencias a CSAM o sitios que lo contengan.</li>
+                <li class="flex gap-2 text-stone-600"><span class="text-red-400 font-bold">×</span>Suplantar la identidad de un menor o de un responsable de parroquia.</li>
+                <li class="flex gap-2 text-stone-600"><span class="text-red-400 font-bold">×</span>Acosar, amenazar o explotar a cualquier usuario, especialmente a menores de edad.</li>
+                <li class="flex gap-2 text-stone-600"><span class="text-red-400 font-bold">×</span>Utilizar grupos o mensajería parroquial para fines ajenos a la comunidad eclesial autorizada.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="s5" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">5</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Cómo reportar un problema de seguridad infantil</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 leading-relaxed pl-0 sm:pl-14">
+              <p>Si usted detecta contenido, conducta o una cuenta que pueda poner en riesgo a un menor, repórtelo de inmediato por cualquiera de estos medios:</p>
+              <ul class="space-y-3">
+                <li class="flex gap-3 items-start p-4 rounded-xl bg-cream/80 border border-sand/80">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                  <span><strong class="text-navy font-medium">Desde la aplicación:</strong> vaya a <strong class="text-navy font-medium">Configuración → Reportar problema de seguridad</strong> para enviar un reporte directamente al equipo de moderación.</span>
+                </li>
+                <li class="flex gap-3 items-start p-4 rounded-xl bg-cream/80 border border-sand/80">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <span><strong class="text-navy font-medium">Por correo electrónico:</strong> escriba a <a href="mailto:contacto@appiglesia.com?subject=Reporte%20de%20seguridad%20infantil" class="text-navy font-medium underline decoration-gold decoration-2 underline-offset-2 hover:text-gold-dark transition-colors">contacto@appiglesia.com</a> con el asunto «Reporte de seguridad infantil».</span>
+                </li>
+              </ul>
+              <p class="font-medium text-navy">Incluya, cuando sea posible:</p>
+              <ul class="space-y-2 list-disc list-inside marker:text-gold text-sm">
+                <li>Nombre de usuario o identificador del perfil reportado.</li>
+                <li>Grupo o conversación donde ocurrió el incidente.</li>
+                <li>Descripción del hecho y capturas de pantalla (si las tiene).</li>
+                <li>Fecha aproximada del incidente.</li>
+              </ul>
+              <p class="text-sm bg-cream rounded-xl p-4 border border-sand">Si cree que un menor está en peligro inmediato, contacte primero a las autoridades locales o servicios de emergencia de su país antes o además de reportarnos.</p>
+            </div>
+          </section>
+
+          <section id="s6" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">6</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Proceso de revisión y respuesta</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 leading-relaxed pl-0 sm:pl-14">
+              <p>Al recibir un reporte relacionado con seguridad infantil, nuestro equipo:</p>
+              <ul class="grid sm:grid-cols-2 gap-2">
+                <li class="flex gap-2.5 items-start"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span><span>Priorizará la revisión en un plazo de <strong class="text-navy font-medium">24 a 72 horas</strong> (urgente si hay riesgo inmediato).</span></li>
+                <li class="flex gap-2.5 items-start"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span><span>Examinará mensajes, perfiles y contenido reportado almacenados en nuestros sistemas.</span></li>
+                <li class="flex gap-2.5 items-start"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span><span>Retirará contenido que viole estos estándares.</span></li>
+                <li class="flex gap-2.5 items-start"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span><span>Suspenderá o eliminará de forma permanente las cuentas infractoras.</span></li>
+                <li class="flex gap-2.5 items-start"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span><span>Conservará registros necesarios para cooperar con autoridades, conforme a la ley.</span></li>
+                <li class="flex gap-2.5 items-start"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0"></span><span>Informará al reportante cuando sea posible sobre las acciones tomadas.</span></li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="s7" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">7</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Medidas disciplinarias</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 leading-relaxed pl-0 sm:pl-14">
+              <p>Según la gravedad de la infracción, podemos aplicar una o más de las siguientes medidas:</p>
+              <ul class="space-y-2 list-disc list-inside marker:text-gold">
+                <li>Advertencia formal al usuario.</li>
+                <li>Eliminación de mensajes o contenido específico.</li>
+                <li>Restricción temporal de funciones (mensajería, grupos).</li>
+                <li>Suspensión permanente de la cuenta.</li>
+                <li>Bloqueo de dispositivos o identificadores asociados a abusos repetidos.</li>
+                <li>Notificación a autoridades competentes cuando existan indicios de delito.</li>
+              </ul>
+              <p>Las infraciones graves relacionadas con CSAE o CSAM resultarán en eliminación inmediata y reporte a las autoridades correspondientes.</p>
+            </div>
+          </section>
+
+          <section id="s8" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">8</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Cooperación con autoridades</h2>
+            </div>
+            <div class="space-y-4 text-stone-600 leading-relaxed pl-0 sm:pl-14">
+              <p>Cumplimos con las leyes de protección infantil aplicables en las jurisdicciones donde operamos. Cuando detectamos o recibimos indicios creíbles de CSAM o abuso sexual infantil:</p>
+              <ul class="space-y-2 list-disc list-inside marker:text-gold">
+                <li>Preservamos la información relevante conforme a la legislación vigente.</li>
+                <li>Cooperamos con autoridades nacionales y regionales competentes.</li>
+                <li>Reportamos a entidades especializadas cuando la ley lo exija (por ejemplo, el Centro Nacional para Niños Desaparecidos y Explotados — NCMEC — en Estados Unidos, o las autoridades policiales y fiscales locales en otros países).</li>
+              </ul>
+              <p>No permitimos que AppIglesia sea utilizada para ocultar, facilitar o perpetuar abusos contra menores.</p>
+            </div>
+          </section>
+
+          <section id="s9" class="rounded-2xl bg-white border border-sand shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-5">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-navy text-white font-display text-xl font-bold flex items-center justify-center">9</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-navy pt-1">Actualizaciones de este documento</h2>
+            </div>
+            <p class="text-stone-600 leading-relaxed pl-0 sm:pl-14">Podemos actualizar estos estándares para reflejar cambios legales, técnicos o de políticas de la plataforma. Publicaremos la versión vigente en esta misma URL con la fecha de actualización. El uso continuado de la App implica la aceptación de la versión publicada.</p>
+          </section>
+
+          <section id="s10" class="rounded-2xl bg-gradient-to-br from-navy to-navy-light text-white shadow-card p-6 sm:p-8 scroll-mt-24">
+            <div class="flex items-start gap-4 mb-6">
+              <span class="flex-shrink-0 w-10 h-10 rounded-xl bg-gold text-navy font-display text-xl font-bold flex items-center justify-center">10</span>
+              <h2 class="font-display text-2xl sm:text-3xl font-semibold text-white pt-1">Contacto para seguridad infantil</h2>
+            </div>
+            <p class="text-white/85 leading-relaxed mb-6 pl-0 sm:pl-14">Para reportes de seguridad infantil, consultas sobre estas políticas o solicitudes de autoridades:</p>
+            <div class="flex flex-col sm:flex-row gap-4 pl-0 sm:pl-14">
+              <a href="mailto:contacto@appiglesia.com?subject=Reporte%20de%20seguridad%20infantil" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gold text-navy font-semibold hover:bg-gold-light transition-colors shadow-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                contacto@appiglesia.com
+              </a>
+              <div class="flex items-center gap-2 text-white/70 text-sm px-4">
+                <span class="hidden sm:inline">·</span>
+                EliDevosDM — AppIglesia / MyParr
+              </div>
+            </div>
+          </section>
+
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-sand bg-white/60 backdrop-blur-sm mt-4">
+    <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-stone-500">
+      <p>&copy; 2026 <span class="font-semibold text-navy">AppIglesia</span> · EliDevosDM</p>
+      <p class="text-stone-400">Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-navy text-white shadow-lg flex items-center justify-center hover:bg-navy-light transition-all hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2" aria-label="Volver arriba">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </a>
+
+</body>
+</html>
